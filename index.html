@@ -2,27 +2,26 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Manhwa Reader</title>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manhwa Hub</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <h2>Manhwa Reader</h2>
-
-  <div class="controls">
-    <button onclick="toggleTheme()">🌙</button>
-
-    <select id="chapterSelect" onchange="loadChapter()">
-      <option value="chapter1">Chapter 1</option>
-    </select>
-  </div>
+<header class="topbar">
+  <h2>🌸 Manhwa Hub</h2>
 </header>
 
-<div id="reader"></div>
+<section class="grid">
 
-<script src="reader.js"></script>
+  <a href="reader.html" class="card">
+    <div class="badge ongoing">ONGOING</div>
+    <img src="images/cover1.jpg">
+    <h3>Solo Leveling</h3>
+    <p>Action • Fantasy</p>
+  </a>
+
+</section>
+
 </body>
 </html>
