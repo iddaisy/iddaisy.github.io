@@ -1,13 +1,34 @@
 const reader = document.getElementById("reader");
+const titleBar = document.getElementById("chapterTitle");
 
-const totalPages = 2;
+// read URL params
 
-for (let i = 1; i <= totalPages; i++) {
+const params = new URLSearchParams(window.location.search);
 
-  const img = document.createElement("img");
-  img.src = `images/chapter1/${i}.jpg`;
-  img.className = "page";
-  img.loading = "lazy";
+const mangaID = params.get("manga");
+const chapterID = params.get("ch");
 
-  reader.appendChild(img);
-}
+// load JSON
+
+fetch("data.json")
+.then(res => res.json())
+.then(data => {
+
+  const manga = data[mangaID];
+  const pages = manga.chapters[chapterID];
+
+  titleBar.innerText = manga.title + " — Chapter " + chapterID;
+
+  pages.forEach(url => {
+
+    const img = document.createElement("img");
+
+    img.src = url;
+    img.className = "page";
+    img.loading = "lazy";
+
+    reader.appendChild(img);
+
+  });
+
+});
