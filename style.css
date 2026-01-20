@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Background */
+body {
+  background: #fff8ee;
+  color: #2d2d2d;
+}
+
+/* TOP BAR */
+.topbar {
+  padding: 15px;
+  text-align: center;
+  background: #fff1d6;
+  font-weight: bold;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+  padding: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* CARD */
+.card {
+  background: #fff4e6;
+  border-radius: 12px;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  position: relative;
+  box-shadow: 0 2px 6px rgba(0,0,0,.05);
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* TITLE */
+.card h3 {
+  margin-top: 8px;
+  color: #5c4720;
+}
+
+.card p {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+/* BADGES */
+.badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.ongoing {
+  background: #FFF6B7;
+}
+
+.completed {
+  background: #A7E8BD;
+}
+
+/* READER */
+
+.reader-bar {
+  position: sticky;
+  top: 0;
+  background: #fff1d6;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.reader-bar a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Reader pages */
+
+#reader {
+  max-width: 900px;
+  margin: auto;
+}
+
+.page {
+  width: 100%;
+  display: block;
+}
