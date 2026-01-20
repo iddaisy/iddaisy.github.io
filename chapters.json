@@ -1,0 +1,15 @@
+{
+  "solo-leveling": {
+    "title": "Solo Leveling",
+    "cover": "https://cdn.site/cover.webp",
+    "chapters": {
+      "1": [
+        "https://cdn.site/ch1/1.webp",
+        "https://cdn.site/ch1/2.webp"
+      ],
+      "2": [
+        "https://cdn.site/ch2/1.webp"
+      ]
+    }
+  }
+}
