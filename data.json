@@ -1,0 +1,20 @@
+{
+  "solo-leveling": {
+    "title": "Solo Leveling",
+    "cover": "https://i.imgur.com/WP4QXqj.jpg",
+    "status": "ongoing",
+    "genre": "Action • Fantasy",
+
+    "chapters": {
+      "1": [
+        "https://i.imgur.com/tGbaZCY.jpg",
+        "https://i.imgur.com/7uYjP9y.jpg"
+      ],
+
+      "2": [
+        "https://i.imgur.com/tGbaZCY.jpg",
+        "https://i.imgur.com/7uYjP9y.jpg"
+      ]
+    }
+  }
+}
